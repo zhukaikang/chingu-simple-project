@@ -2,77 +2,197 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="shortcut icon" href="./favicon.png" />
         <meta name="theme-color" content="#000000" />
         <title>Simple Boilerplate</title>
         <link rel="stylesheet" type="text/css" href="src/css/index.css">
+        <link rel="shortcut icon" type="image/icon" href="https://www.lloyds.com/images/favicon.ico">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <!-- Add additional CSS & JS files as necessary here -->
     </head>
     <body>
-        <!-- Add your site or application content here -->
-        <!-- <ul class="first-navbar">
-                <li class="dropdown">
-                    <a class="dropdn" href="#home">Home</a>
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">L 2</a>
-                        <a href="#">L 3</a>
+        <div class="container">
+            <!-- header starts here -->
+            <header class="header">
+                <div class="top-header">
+                    <div class="logo">
+                        <a href="https://www.lloyds.com/">LLOYD'S</a>
                     </div>
-                </li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-            </ul> -->
-        <header class="header">
-            <div class="header-container">
-                <div class="first-navbar">
-                    <ul id="navbar">
-                        <li class="dropdown">
-                            <a class="dropdn" href="#home">Home</a>
-                            <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">L 2</a>
-                             <a href="#">L 3</a>
-                            </div>
-                        </li>
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#about">About</a></li>
-                    </ul>
+                    <nav>
+                        <ul>
+                            <li>
+                               <a href="https://www.lloyds.com/about-lloyds">About</a>
+                            </li>
+                            <li>
+                                <a href="https://www.lloyds.com/about-lloyds/value_proposition_broker">Brokers</a>
+                            </li>
+                            <li>
+                                <a href="https://www.lloyds.com/about-lloyds/value_proposition_coverholder">Coverholders</a>
+                            </li>
+                            <li>
+                                <a href="https://www.lloyds.com/about-lloyds/value_proposition_insurer">Insurer</a>
+                            </li>
+                            <li>
+                                <a href="https://www.lloyds.com/policyholder">Policyholders</a>
+                            </li>
+                            <li>
+                                <a href="https://www.lloyds.com/careers">Careers</a>
+                            </li>
+                            <li>
+                                <a href="https://www.lloyds.com/investor-relations">Investor relations</a>
+                            </li>
+                            <li>
+                                <a href="https://www.lloyds.com/contact-us">Contact</a>
+                            </li>
+                            <li>
+                                <a href="https://www.lloyds.com/Account/Login">Login/register</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="search">
+                        <input type="text" required placeholder="Search">
+                    </div>
                 </div>
-                <div class="second-navbar">
-                    <ul id="navbar">
-                        <li>News and risk insight</li>
-                        <li>Market direct ory</li>
-                        <li>Market Resources</li>
-                        <li>Tools and systems</li>
-                        <li>Lloyd's around the world</li>
-                    </ul>
+                <div class="bottom-header">
+                    <div class="nav-tab-active" id="new-risk-tab" style="background-color: #dfe0e6;">
+                        <a id="tab-link" href="https://www.lloyds.com/news-and-risk-insight" style="text-decoration: none;">News and risk insight</a>
+                    </div>
+                    <div class="nav-tab" id="m-tab">
+                        <a id="m-tab-link" href="https://www.lloyds.com/market-directory">Market directory</a>
+                    </div>
+                    <div class="nav-tab">
+                         <a href="https://www.lloyds.com/market-resources">Market resources</a>
+                    </div>
+                    <div class="nav-tab">
+                            <a href="https://www.lloyds.com/tools-and-systems">Tools and systems</a>
+                    </div>
+                    <div class="nav-tab">
+                        <a href="https://www.lloyds.com/lloyds-around-the-world">Lloyd's around the world</a>
+                    </div>
+                </div>
+            </header>
+            <!-- header ends here -->
+
+
+            <!-- Banner starts here -->
+            <div class="banner">
+                <div class="banner-contents">
+                    <div class="risk-report">
+                        <ul>
+                            <li class="after">
+                                <a href="https://www.lloyds.com/news-and-risk-insight/risk-reports">Risk Reports</a>
+                            </li>
+                            <li>
+                                <a href="https://www.lloyds.com/news-and-risk-insight/risk-reports/library/technology">Technology</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="article">
+                        <h1>Taking control</h1>
+                        <p>
+                            How artificial intelligence and robots create new risks and opportunities for insurance and society
+                        </p>
+                    </div>
+                    <div class="share">
+                        <a id="sharebtn">
+                            <i class="fa fa-share-alt"></i>
+                            Share</a>
+                    </div>
                 </div>
             </div>
-        </header>
 
-        <div id="root">
-            <img src="src/assets/simple-boilerplate-logo@3x.png" class="logo" alt="logo" />
-            <h1>Welcome to Simple Boilerplate!</h1>
-            <p>
-                This boilerplate is ready for HTML/CSS, Javascript, and JQuery projects. 
-                It includes a live server that lets you see HTML/JS/CSS changes with every save.
-            </p>
-            
-            <p id="subtext">
-                An Example JavaScript Hook.
-            </p>
+            <!-- banner ends here -->
 
-            <h2>Instructions:</h2>
-            <p>
-                To see live changes, please go to the root folder ('simple-boilerplate/')
-                and run "npm start".
-            </p>
-            <p>
-                To start coding, start changing the files within src/css and src/js. 
-                Images can be stored in src/assets.
-            </p>
+            <!-- Main section starts here -->
+            <div class="main-section">
+                <div class="section-fluid">
+                    <p>
+                            As the world becomes increasingly automated, it is forcing underwriters to adapt and navigate a new risk environment. Meanwhile insurers are leveraging the potential of AI themselves to remain competitive, improve processes and increase efficiency. Lloyd’s have commissioned two reports in collaboration with the University of Surrey that explore these trends in more detail.
+                    </p>
+                    <p>
+                            “Taking control: artificial intelligence and insurance” analyses the associated risks of AI implementation as well as the potential for AI to help insurers improve their operations and develop new products. Building on this, “Taking control: robots and risk” investigates the impact “collaborative robots” (or cobots) on the economy, and the subsequent risks implications for the insurance industry.
+                    </p>
+                    <div class="row">
+                        <div class="col-4 dn">
+                            <img src="https://www.lloyds.com/~/media/files/news-and-insight/risk-insight/2019/taking-control-thumb.png">
+                        </div>
+                        <div class="col-6 col">
+                            <h2>Taking control: artificial intelligence and insurance</h2>
+                            <P>This report identifies four risks areas for AI: trust and transparency, ethics, security and safety. It highlights that as artificial intelligence systems become more complex, cyber breaches are likely to have an even greater impact. The report also explores new business opportunities for insurers from developing new products for companies using the AI to applying the technology to improve insurance processes and deliver better value.</P>
+                            <div class="download">
+                                <a href="https://www.lloyds.com/~/media/files/news-and-insight/risk-insight/2019/aireport_2019_final_pdf.pdf">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 dn">
+                            <img src="https://www.lloyds.com/~/media/files/news-and-insight/risk-insight/2019/robots-thumbnail.png">
+                        </div>
+                        <div class="col-6 col">
+                            <h2>Taking control: robots and risk</h2>
+                            <P>In the future millions of jobs could be taken over by increasingly sophisticated robots or cobots (“collaborative robots”), according to various predictions. This report explores robotics potential to significantly change the risk landscape in many parts of the economy, including: manufacturing, agriculture, healthcare and retail. It also explores the opportunity for insurers to collaborate with clients as data from cobots will provide a much greater understanding of risk and offer opportunities for improved risks and pricing models.</P>
+                            <div class="download">
+                                <a href="https://www.lloyds.com/~/media/files/news-and-insight/risk-insight/2019/aireport_2019_final_pdf.pdf">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer starts here -->
+            <footer>
+                <div class="section-fluid">
+                    <ul>
+                        <li>
+                            <a href="https://www.lloyds.com/common/privacy-notices">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="https://www.lloyds.com/common/cookies-policy">Cookies</a>
+                        </li>
+                        <li>
+                            <a href="https://www.lloyds.com/common/terms-and-conditions">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="https://www.lloyds.com/modernslaverystatement">Modern Slavery Act</a>
+                        </li>
+                        <li>
+                            <a href="https://www.lloyds.com/help-and-glossary">Help</a>
+                        </li>
+                        <li>
+                            <a href="https://www.lloyds.com/contact-us">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="social-icon">
+                        <ul>
+                            <li>
+                                <a href="https://twitter.com/LloydsofLondon">
+                                    <div class="twitter-icon">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.linkedin.com/company/lloyd%27s-of-london">
+                                    <div class="linkedin-icon">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/lloyds">
+                                    <div class="facebook-icon"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.youtube.com/user/Lloydsinsurance">
+                                    <div class="youtube-icon"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footnotes">
+                        <p>Lloyd's Copyright 2019</p>
+                        <p>Lloyd's is a registered trademark of the Society of Lloyd's. Lloyd's is authorised under the Financial Services and Markets Act 2000.</p>
+                    </div>
+                </div>
+            </footer>
         </div>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
         <!-- ================================ -->

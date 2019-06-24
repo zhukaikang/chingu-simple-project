@@ -1,10 +1,10 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* background-color: #2b2b2b; */
-  background-color: white;
-  color: rgb(214, 214, 214);
-  max-width: 1000px;
-  margin: 0 auto;
+  margin:0px;
+  padding: 0px;
 }
 
 #root {
@@ -16,76 +16,319 @@ body {
   margin-top: 100px;
 }
 
+.header{
+  width: 74%;
+  margin: 0px auto;
+}
+
+.top-header{
+  display: flex;
+  width:100%;
+}
+
 .logo {
-  display: block;
-  margin: 0 auto;
-}
-
-h1 {
-  margin-top: 50px;
-}
-
-p {
-  font-size: 22px;
-}
-
-#navbar{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  text-decoration: underline;
-}
-/* ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  text-decoration: underline;
-} */
-
-li {
-  float: left;
-}
-
-li a, .dropdn {
-  display: block;
-  color: white;
+  width: 10%;
   text-align: center;
-  padding: 14px 16px;
+  background-color: black;
+  padding-top: 13px;
+  height: 40px;
+}
+
+.logo a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 19px;
+}
+nav{
+  width: 70%;
+  height: 40px;
+  margin-left: 7px;
+  border-bottom: 1px solid #ccc;
+}
+
+nav ul{
+  padding: 5px;
+  margin-top: 5px;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style-type: none;
+  border-left: 1px solid #ccc;
+  padding: 5px 7px 0px 7px;
+  height: 16px;
+}
+
+nav ul li a{
+  color: #000;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: neue;
+  padding-left: 2px;
+}
+
+nav ul li a:hover{
+  text-decoration: underline;
+}
+
+.search{
+  width:15%;
+}
+
+.search input{
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  background-color: #f1f1f1;
+  display: block;
+  border-bottom: 1px solid #282f54;
+  border-top: 1px solid #f1f1f1;
+  border-left: 1px solid #f1f1f1;
+  height: 40px;
+  background-image: url(https://img.icons8.com/material/24/000000/search.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 25px;
+}
+
+.bottom-header{
+  display: flex;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.nav-tab{
+  width:20%;
+  text-align: center;
+  padding:10px;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #282f54;
+  background-color: #282f54;
+}
+
+div.active{
+  /* border-top: 1px solid #282f54; */
+}
+
+div.active a:hover{
+  text-decoration: underline;
+}
+
+.nav-tab a{
+  font-weight: bold;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropdn {
-  /* background-color: #111; */
+.nav-tab a:hover{
   text-decoration: underline;
 }
 
-li.dropdown{
+#new-risk-tab a{
+  color: #282f54;
+}
+
+.nav-tab-active a{
+  font-weight: bold;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.nav-tab-active a:hover{
+  text-decoration: underline;
+}
+
+.nav-tab-active{
+  width:20%;
+  text-align: center;
+  padding:10px;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #282f54;
+  background-color: #282f54;
+}
+
+.banner{
+  width:100%;
+  background-color: #f1f1f1;
+  padding: 10px 0px 0px 0px;
+}
+
+.banner-contents{
+  width: 74%;
+  margin: 0px auto;
+}
+
+.risk-report ul{
+  padding: 0px;
+  margin-top: 25px;
+}
+
+.risk-report ul li{
   display: inline-block;
 }
 
-.dropdown-content{
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a{
-  color: black;
-  padding: 12px 16px;
+.risk-report ul li a{
   text-decoration: none;
-  display: block;
-  text-align: left;
+  color: #909090;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.risk-report ul .after::after{
+  content: '>';
+  margin: 15px;
+}
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.article h1{
+  font-size: 45px;
+  color: #262626;
+  font-family:'neue-haas-grotesk-text', sans-serif; 
+}
+
+.article p{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: 'neue-haas-grotesk-text', sans-serif;
+}
+
+.share{
+  padding: 20px;
+  cursor: pointer;
+}
+
+.share a{
+  color: #0c4ab5;
+}
+
+.fa-share-alt:before{
+  content: "\f1e0";
+  background: url(https://www.lloyds.com/images/icon-share.svg);
+}
+
+.section-fluid{
+  width: 80%;
+  margin: 0px auto;
+}
+
+.section-fluid p{
+  font-family: 'neue-haas-grotesk-text', sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+
+}
+
+.row{
+  display: flex;
+  margin-top: 40px;
+  padding: 20px;
+}
+.col-4{
+  width: 20%;
+  margin-right: 30px;
+  margin-left: 15px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+.col-4 img{
+  width: 100%;
+  height: 100%;
+}
+
+.col-6{
+  width: 60%;
+}
+
+.col-6 h2{
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-size: 20px;
+  line-height: 1.5em;
+  margin-top: 0px;
+}
+
+.col-6 p {
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-size: 15px;
+  font-weight: 400px;
+  line-height: 1.5em;
+  text-align: start;
+}
+
+.download {
+  width: 105px;
+  padding: 20px;
+  background-color: #0a4bb7;
+}
+
+.download a{
+  color: #fff;
+  text-decoration: none;
+}
+
+footer{
+  background: #141414;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+}
+
+.section-fluid{
+  width: 74%;
+  
+}
+
+footer .section-fluid ul{
+  padding: 0px;
+}
+
+footer .section-fluid > ul li:nth-child(1){
+  border-left: none;
+  margin-left: -10px;
+}
+
+footer .section-fluid > ul li{
+  display: inline-block;
+  padding: 0px 5px 0px 5px;
+  height: 20px;
+  border-left: 1px solid #fff;
+  list-style-type: none;
+}
+
+footer .section-fluid > ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.twitter-icon{
+  background: url(https://www.lloyds.com/css/icons/twitter.svg) no-repeat center center;
+  width: 40px;
+  height: 50px;
+}
+
+.linkedin-icon{
+  background: url(https://www.lloyds.com/css/icons/linkedin.svg) no-repeat center center;
+  width: 40px;
+  height: 50px;
+}
+
+.facebook-icon{
+  background: url(https://www.lloyds.com/css/icons/facebook.svg) no-repeat center center;
+  width: 40px;
+  height: 50px;
+}
+
+.youtube-icon{
+  background: url(https://www.lloyds.com/css/icons/youtube.svg) no-repeat center center;
+  width: 40px;
+  height: 50px;
+}
+
+.social-icon ul li{
+  border: none;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.footnotes p{
+  color: #fff;
 }
